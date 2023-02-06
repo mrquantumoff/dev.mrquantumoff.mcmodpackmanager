@@ -34,9 +34,22 @@
   </keywords>
   <releases>
 
+    <release date="2023-02-06" version="6.1.1">
+      <description>
+        <p>Add download speed</p>
+      </description>
+    </release>
+
+    <release date="2023-02-06" version="6.1.0">
+      <description>
+        <p>Add download speed</p>
+      </description>
+    </release>
+
     <release date="2023-02-04" version="6.0.0">
       <description>
-        <p>The app has been rewritten in Dart and Flutter</p>
+        <p>The
+          app has been rewritten in Dart and Flutter</p>
       </description>
     </release>
 
