@@ -2,7 +2,7 @@
 app-id: dev.mrquantumoff.mcmodpackmanager
 runtime: org.freedesktop.Platform
 runtime-version: '22.08'
-sdk: org.freedesktop.Sdk  
+sdk: org.freedesktop.Sdk
 command: mcmodpackmanager_reborn
 
 finish-args:
@@ -28,7 +28,7 @@ modules:
         url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/master/dev.mrquantumoff.mcmodpackmanager.desktop
         sha256: decd1fa4c1b64afb3a036ae1b38ab4a1b5c31109c67255128246b1fbe97ebc6d
       - type: file
-        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/releases/download/v6.1.1/GNULinuxBuild.tar.gz
-        sha256: cfddf216f20b69e8eb0942dab2fa0d238ee4cea1989dbfecbf7f52e72af158c4
+        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/releases/download/v6.2.0/GNULinuxBuild.tar.gz
+        sha256: 6f05d1b72fc7bf441f6b5e5cd2e122dd4502bbb6bfdf048d344883a49e20e0b9
       - type: file
         path: build.sh
