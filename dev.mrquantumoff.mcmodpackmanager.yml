@@ -21,7 +21,7 @@ modules:
     sources:
       - type: file
         url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/v7.2.0/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
-        sha256: ce73f203f21007e84bbbf087e55e35c563e7b6c77e8b9f2d4fc4a26cc6285918s
+        sha256: ce73f203f21007e84bbbf087e55e35c563e7b6c77e8b9f2d4fc4a26cc6285918
       - type: file
         url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/master/assets/icons/logohalf.png
         sha256: ec077287a029723eb19495f9669cbf159bcf5d43a28908f4e0088dafa8ab417e
