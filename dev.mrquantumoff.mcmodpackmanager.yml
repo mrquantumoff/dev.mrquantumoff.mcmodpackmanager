@@ -20,7 +20,7 @@ modules:
       - ./build.sh
     sources:
       - type: file
-        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/v7.3.0/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
+        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/v7.3.2/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
         sha256: b8abb8f8a3402409599a74ebfa622bda29492a20704ed5408be79544915f5f36
       - type: file
         url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/master/assets/icons/logohalf.png
@@ -29,7 +29,7 @@ modules:
         url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/master/dev.mrquantumoff.mcmodpackmanager.desktop
         sha256: decd1fa4c1b64afb3a036ae1b38ab4a1b5c31109c67255128246b1fbe97ebc6d
       - type: file
-        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/releases/download/v7.3.0/GNULinuxBuild.tar.gz
-        sha256: 6f8bcf8556debae4429978e071925f3c6839ec4864c88f2bab02a2a29220b5d2
+        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/releases/download/v7.3.2/GNULinuxBuild.tar.gz
+        sha256: b4b75927577a94ac1bb024fde30e3816d6ad7f001f76e5e5268bd130635ab94f
       - type: file
         path: build.sh
