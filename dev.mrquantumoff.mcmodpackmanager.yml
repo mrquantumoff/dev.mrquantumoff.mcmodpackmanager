@@ -23,8 +23,11 @@ modules:
         url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/v7.6.1/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
         sha256: a758927165abf16208eb9a917db36b8050487322ab2fe23b70044fd6e0d1b9ae
       - type: file
-        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/master/assets/icons/logohalf.png
-        sha256: ec077287a029723eb19495f9669cbf159bcf5d43a28908f4e0088dafa8ab417e
+        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/master/assets/icons/logo256.png
+        sha256: 46ea3e6ce60eccca1020022421a95eddb462cf4dcb1021ef115a44ca1aba184b
+      - type: file
+        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/master/assets/icons/logo.svg
+        sha256: e6046daf2b1cfed20bdf1786f3f879b0131caf08e45872b22d597ad25f96aa2d
       - type: file
         url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/master/dev.mrquantumoff.mcmodpackmanager.desktop
         sha256: decd1fa4c1b64afb3a036ae1b38ab4a1b5c31109c67255128246b1fbe97ebc6d
@@ -33,4 +36,4 @@ modules:
         sha256: bad33cb59e5e54fbb91de1c44d39e1f9e365e38435e4fec37000f0ea8824c18a
       - type: file
         path: build.sh
-        
+
