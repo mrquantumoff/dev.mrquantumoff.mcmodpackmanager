@@ -33,7 +33,7 @@ modules:
         sha256: decd1fa4c1b64afb3a036ae1b38ab4a1b5c31109c67255128246b1fbe97ebc6d
       - type: file
         url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/releases/download/v7.7.0/GNULinuxBuild.tar.gz
-        sha256: e3b9c785fa0f65ff1646e0044bb29a85b0e35a19543dcbfba547e862d99fd39c
+        sha256: 5504132b6d0d51ba84a69bd66a59812556ced339d5025b60dc78a39695a3930e
       - type: file
         path: build.sh
 
