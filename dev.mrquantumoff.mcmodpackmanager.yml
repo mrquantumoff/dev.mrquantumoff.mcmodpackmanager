@@ -20,8 +20,8 @@ modules:
       - ./build.sh
     sources:
       - type: file
-        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/v7.16.0/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
-        sha256: c0fa376f58aa9b64a93ab301c1eab6cfcd3c79e01a01f7b67cabba91d2a8baa8
+        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/v7.17.0/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
+        sha256: 6d8858bde111b4bddfea847dad35965d359e740f5e3ae4e29d6acda1cd6a2b4b
       - type: file
         url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/master/assets/icons/logo256.png
         sha256: 46ea3e6ce60eccca1020022421a95eddb462cf4dcb1021ef115a44ca1aba184b
@@ -30,10 +30,10 @@ modules:
         sha256: e6046daf2b1cfed20bdf1786f3f879b0131caf08e45872b22d597ad25f96aa2d
       - type: file
         url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/master/dev.mrquantumoff.mcmodpackmanager.desktop
-        sha256: d474d3e1f1fd6855dff88a8be03b2972f99285dc79fdcd7e69f1c72f776e710d
+        sha256: f56921a4db1111adce8540f71e4153ba28f175b4ef1ac5faef4651c329e69eaa
       - type: file
-        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/releases/download/v7.16.0/GNULinuxBuild.tar.gz
-        sha256: 4d1b714129acb789b1dde695bba6dd625cfcc91877c7d662785a936ae6fce031
+        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/releases/download/v7.17.0/GNULinuxBuild.tar.gz
+        sha256: cc424778c1f66bfc2d3b4ae480cbf34623cfbb4b8898499d7f987f0451532ec6
       - type: file
         path: build.sh
 
