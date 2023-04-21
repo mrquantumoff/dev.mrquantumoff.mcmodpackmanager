@@ -20,8 +20,8 @@ modules:
       - ./build.sh
     sources:
       - type: file
-        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/v7.20.0/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
-        sha256: 8e0391b3c64fafc152c8f14ef97c6b6229883a76d0a7c40edc764ac5a14c1c00
+        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/5523f1df33ea0e70c654fd4c432e739e5c018e0e/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
+        sha256: 0aaefb1c4d7dc5563241b41cec035ede27496a1f7106a452c77e5ffc2744f548
       - type: file
         url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/master/assets/icons/logo256.png
         sha256: 46ea3e6ce60eccca1020022421a95eddb462cf4dcb1021ef115a44ca1aba184b
