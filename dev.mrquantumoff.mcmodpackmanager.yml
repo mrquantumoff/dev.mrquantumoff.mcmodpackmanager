@@ -14,26 +14,26 @@ finish-args:
   - --filesystem=home
 
 modules:
-  - name: Minecraft Modpack Manager Reborn
+  - name: Quadrant
     buildsystem: simple
     build-commands:
       - ./build.sh
     sources:
       - type: file
-        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/v10.1.0/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
-        sha256: 5c9b83285c2ab59c21bcf70d156739ad2114afb0885103eaffa5f006e0859693
+        url: https://github.com/mrquantumoff/quadrant/raw/master/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
+        sha256: 8ce26c1c6413fed3366d50afdf40932d1d65401a3fa0d901725f21691f680cb7
       - type: file
-        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/master/assets/icons/logo256.png
+        url: https://github.com/mrquantumoff/quadrant/raw/master/assets/icons/logo256.png
         sha256: 46ea3e6ce60eccca1020022421a95eddb462cf4dcb1021ef115a44ca1aba184b
       - type: file
-        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/master/assets/icons/logo.svg
+        url: https://github.com/mrquantumoff/quadrant/raw/master/assets/icons/logo.svg
         sha256: e6046daf2b1cfed20bdf1786f3f879b0131caf08e45872b22d597ad25f96aa2d
       - type: file
-        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/raw/master/dev.mrquantumoff.mcmodpackmanager.desktop
-        sha256: f56921a4db1111adce8540f71e4153ba28f175b4ef1ac5faef4651c329e69eaa
+        url: https://github.com/mrquantumoff/quadrant/raw/master/dev.mrquantumoff.mcmodpackmanager.desktop
+        sha256: c147afba1ed77234652e54249a8ff37be880fbd4f01d313709b15003357c5167
       - type: file
-        url: https://github.com/mrquantumoff/mcmodpackmanager_reborn/releases/download/v10.1.0/GNULinuxBuild.tar.gz
-        sha256: 7263881eb3ba099dd1060ee4523601d3799bca8b574b6f02afef8d82e49b60a7
+        url: https://github.com/mrquantumoff/quadrant/releases/download/v11.0.0/GNULinuxBuild.tar.gz
+        sha256: cdf77eb3bb62b5abad1c391bb287ec1db193dc5002019f2993bec335e8b30d3c
       - type: file
         path: build.sh
 
