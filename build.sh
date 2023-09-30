@@ -13,6 +13,6 @@ rm GNULinuxBuild.tar.gz
 mv build/*/*/*/*/* .
 rm -rf build
 ls /app/opt/dev.mrquantumoff.mcmodpackmanager
-chmod +x /app/opt/dev.mrquantumoff.mcmodpackmanager/mcmodpackmanager_reborn
+chmod +x /app/opt/dev.mrquantumoff.mcmodpackmanager/quadrant
 mkdir -p /app/bin
-ln -sf /app/opt/dev.mrquantumoff.mcmodpackmanager/mcmodpackmanager_reborn /app/bin/mcmodpackmanager_reborn
+ln -sf /app/opt/dev.mrquantumoff.mcmodpackmanager/quadrant /app/bin/quadrant
