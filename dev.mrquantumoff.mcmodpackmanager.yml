@@ -3,7 +3,7 @@ app-id: dev.mrquantumoff.mcmodpackmanager
 runtime: org.freedesktop.Platform
 runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
-command: mcmodpackmanager_reborn
+command: quadrant
 
 finish-args:
   - --share=ipc
