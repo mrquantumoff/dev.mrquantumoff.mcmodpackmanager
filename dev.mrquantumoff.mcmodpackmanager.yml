@@ -21,7 +21,7 @@ modules:
     sources:
       - type: file
         url: https://github.com/mrquantumoff/quadrant/raw/v24.1.0/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
-        sha256: 5bd2962842737a6d22e282800ec5f1429a5e322d7619632e5df72675d8e05744
+        sha256: 71c8ab6c771c737677b64e4b90fafe82b1da7b64e7e415090793d93faf984f8f
       - type: file
         url: https://github.com/mrquantumoff/quadrant/raw/master/assets/icons/logo256.png
         sha256: 46ea3e6ce60eccca1020022421a95eddb462cf4dcb1021ef115a44ca1aba184b
