@@ -30,7 +30,7 @@ modules:
         sha256: e6046daf2b1cfed20bdf1786f3f879b0131caf08e45872b22d597ad25f96aa2d
       - type: file
         url: https://github.com/mrquantumoff/quadrant/raw/master/dev.mrquantumoff.mcmodpackmanager.desktop
-        sha256: c147afba1ed77234652e54249a8ff37be880fbd4f01d313709b15003357c5167
+        sha256: b2562659258a1a29dd8dac1ca8cae52f8bc73650a2ae387ac0bc7f28a4368ae3
       - type: file
         url: https://github.com/mrquantumoff/quadrant/releases/download/v24.1.2/GNULinuxBuild.tar.gz
         sha256: d43061aa3cc32c63a896b436fbd5f3f5030b3137fe5ea5e514a487610cb70354
