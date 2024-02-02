@@ -20,8 +20,8 @@ modules:
       - ./build.sh
     sources:
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/raw/v24.2.2/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
-        sha256: 1380efd012fa9411e67020399947af0c86e46eff614be4ed26dd8d010b1c291b
+        url: https://raw.githubusercontent.com/mrquantumoff/quadrant/240de22aa288a6534754f74f5bbae39fe348b8ab/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
+        sha256: 96f358ac2ad1e2028a4353974fcef419ce0b6b4d64071a6e0664af8d1b31ae25
       - type: file
         url: https://github.com/mrquantumoff/quadrant/raw/master/assets/icons/logo256.png
         sha256: 46ea3e6ce60eccca1020022421a95eddb462cf4dcb1021ef115a44ca1aba184b
