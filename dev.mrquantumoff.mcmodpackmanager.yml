@@ -1,8 +1,8 @@
 # Flatpak Manifest
 app-id: dev.mrquantumoff.mcmodpackmanager
-runtime: org.freedesktop.Platform
-runtime-version: '23.08'
-sdk: org.freedesktop.Sdk
+runtime: org.gnome.Platform
+runtime-version: '46'
+sdk: org.gnome.Sdk
 command: quadrant
 
 finish-args:
