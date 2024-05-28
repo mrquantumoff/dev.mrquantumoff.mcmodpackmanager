@@ -20,8 +20,8 @@ modules:
       - ./build.sh
     sources:
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/raw/v24.6.1/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
-        sha256: 30987c5be11123edebe97f6770d6767d5a27e54271196d07d522d3c2f7520edf
+        url: https://github.com/mrquantumoff/quadrant/raw/v24.6.2/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
+        sha256: 78a36ce12ef6d2e0f5b5a1ca9a569c9cb9dbcd8a50dd122b2ae79f4c91fc1d77
       - type: file
         url: https://github.com/mrquantumoff/quadrant/raw/master/assets/icons/logo256.png
         sha256: 46ea3e6ce60eccca1020022421a95eddb462cf4dcb1021ef115a44ca1aba184b
@@ -32,8 +32,8 @@ modules:
         url: https://github.com/mrquantumoff/quadrant/raw/master/dev.mrquantumoff.mcmodpackmanager.desktop
         sha256: 883211f4e838c44f3c82dbb905c7b9878e4dc36051afd2c3c9bb3f437ee9c228
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/releases/download/v24.6.1/GNULinuxBuild.tar.gz
-        sha256: 80bd0175f3b09fb2dd84a558217d05341c555775a5d835e1e1e3a2952fc70525
+        url: https://github.com/mrquantumoff/quadrant/releases/download/v24.6.2/GNULinuxBuild.tar.gz
+        sha256: 43ea25a038137001d9dfa6735f80d008df4053025711680c64bafefab4d99d4b
       - type: file
         path: build.sh
 
