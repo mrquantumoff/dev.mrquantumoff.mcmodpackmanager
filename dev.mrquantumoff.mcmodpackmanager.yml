@@ -12,6 +12,7 @@ finish-args:
   - --share=network
   - --device=dri
   - --filesystem=home
+  - --socket=session-bus
 
 modules:
   - name: Quadrant
