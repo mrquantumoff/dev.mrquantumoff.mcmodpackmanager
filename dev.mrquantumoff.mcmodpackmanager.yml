@@ -12,7 +12,7 @@ finish-args:
   - --share=network
   - --device=dri
   - --filesystem=home
-  - --socket=session-bus
+  - --talk-name=org.freedesktop.secrets
 
 modules:
   - name: Quadrant
