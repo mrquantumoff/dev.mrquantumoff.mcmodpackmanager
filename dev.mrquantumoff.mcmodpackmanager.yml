@@ -39,7 +39,7 @@ modules:
         sha256: 883211f4e838c44f3c82dbb905c7b9878e4dc36051afd2c3c9bb3f437ee9c228
       - type: file
         url: https://github.com/mrquantumoff/quadrant/releases/download/v24.7.2/GNULinuxBuild.tar.gz
-        sha256: 70811e675fa7f610e909bbd2dc785eda1c1e9b37a3c7bc2bbc680760370b4b33
+        sha256: ddb5b8a3465fba0fc44fb0376f7fad644f8598955e46873bb9e3773ed242f976
       - type: file
         path: build.sh
 
