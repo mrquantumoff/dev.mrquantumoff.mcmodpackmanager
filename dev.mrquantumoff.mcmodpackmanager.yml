@@ -13,8 +13,13 @@ finish-args:
   - --device=dri
   - --filesystem=home
   - --talk-name=org.freedesktop.secrets
+  - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.kde.StatusNotifierWatcher
 
 modules:
+  - shared-modules/libappindicator/libappindicator-gtk3-12.10.json
+  - shared-modules/libdecor/libdecor.json
+  - shared-modules/libsecret/libsecret.json
   - name: Quadrant
     buildsystem: simple
     build-commands:
