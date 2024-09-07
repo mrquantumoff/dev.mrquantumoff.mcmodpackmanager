@@ -1,6 +1,7 @@
 ls
 install -D dev.mrquantumoff.mcmodpackmanager.metainfo.xml /app/share/metainfo/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
 install -D logo256.png /app/share/icons/hicolor/256x256/apps/dev.mrquantumoff.mcmodpackmanager.png
+install -D tray.png /app/share/icons/hicolor/256x256/apps/dev.mrquantumoff.mcmodpackmanager.tray.png
 install -D logo.svg /app/share/icons/hicolor/scalable/apps/dev.mrquantumoff.mcmodpackmanager.svg
 mkdir -p /app/opt/dev.mrquantumoff.mcmodpackmanager
 install -D dev.mrquantumoff.mcmodpackmanager.desktop  /app/share/applications/dev.mrquantumoff.mcmodpackmanager.desktop
