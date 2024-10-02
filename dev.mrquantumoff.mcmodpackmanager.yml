@@ -1,7 +1,7 @@
 # Flatpak Manifest
 app-id: dev.mrquantumoff.mcmodpackmanager
 runtime: org.gnome.Platform
-runtime-version: '46'
+runtime-version: '47'
 sdk: org.gnome.Sdk
 command: quadrant
 
@@ -26,8 +26,8 @@ modules:
       - ./build.sh
     sources:
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/raw/v24.9.1/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
-        sha256: 879d1269f5f7454c11267497f0b2b4fe34846233280cc68a5109cf667db37941
+        url: https://github.com/mrquantumoff/quadrant/raw/v24.10.0/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
+        sha256: 064ade9e67c86564f3a1a675b68b6cdbd476f914a50e4dca253a2a4307ff75da
       - type: file
         url: https://github.com/mrquantumoff/quadrant/raw/master/assets/icons/logo256.png
         sha256: 46ea3e6ce60eccca1020022421a95eddb462cf4dcb1021ef115a44ca1aba184b
@@ -41,8 +41,8 @@ modules:
         url: https://github.com/mrquantumoff/quadrant/raw/master/dev.mrquantumoff.mcmodpackmanager.desktop
         sha256: 883211f4e838c44f3c82dbb905c7b9878e4dc36051afd2c3c9bb3f437ee9c228
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/releases/download/v24.9.1/GNULinuxBuild.tar.gz
-        sha256: 8b37b769fe5cfc5d0eb3c8b61a243a9c72eefe367c17c61482ad8d4e5ddcc550
+        url: https://github.com/mrquantumoff/quadrant/releases/download/v24.10.0/GNULinuxBuild.tar.gz
+        sha256: df5b3ba64123c3919e544d1e0cbbb82ca02cffadb57e5f94f469644b7213b415
       - type: file
         path: build.sh
 
