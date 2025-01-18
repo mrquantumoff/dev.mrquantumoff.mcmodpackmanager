@@ -3,42 +3,49 @@ app-id: dev.mrquantumoff.mcmodpackmanager
 runtime: org.gnome.Platform
 runtime-version: '47'
 sdk: org.gnome.Sdk
-command: quadrant
+command: quadrant_next
 
 finish-args:
   - --share=ipc
-  - --socket=fallback-x11
   - --socket=wayland
+  - --socket=fallback-x11
   - --share=network
   - --device=dri
-  - --filesystem=home
+  - --filesystem=host
+  - --filesystem=xdg-data
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
 
 modules:
   - shared-modules/libappindicator/libappindicator-gtk3-12.10.json
-  - shared-modules/libdecor/libdecor.json
-  - shared-modules/libsecret/libsecret.json
+  # # - shared-modules/libdecor/libdecor.json
+  # - shared-modules/libsecret/libsecret.json
   - name: Quadrant
     buildsystem: simple
-    build-commands:
-      - ./build.sh
     sources:
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/raw/v25.1.0-preview.7/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
-        sha256: 
+        url: https://github.com/mrquantumoff/quadrant/raw/v25.1.0-preview.9/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
+        sha256: 05c77669691f32f0ffbb5cbc44408ef47ff07efe02b849d28ec61d8745bfc9e1
+      # - type: file
+      #   url: https://github.com/mrquantumoff/quadrant/raw/next/public/logo.svg
+      #   sha256: c931975c41451c948805f9ae9401464870dfc6779f1160ad5c346cdb3fa870d7
+      # - type: file
+      #   url: https://github.com/mrquantumoff/quadrant/raw/next/public/tray.png
+      #   sha256: 552ddc5167d947d27084e1b53bb892dd7e4e6d4de7a8dc99172219a2c5080a02
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/raw/next/public/logo.svg
-        sha256: c931975c41451c948805f9ae9401464870dfc6779f1160ad5c346cdb3fa870d7
-      - type: file
-        url: https://github.com/mrquantumoff/quadrant/raw/next/public/tray.png
-        sha256: 552ddc5167d947d27084e1b53bb892dd7e4e6d4de7a8dc99172219a2c5080a02
-      - type: file
-        url: https://github.com/mrquantumoff/quadrant/raw/next/dev.mrquantumoff.mcmodpackmanager.desktop
-        sha256: 883211f4e838c44f3c82dbb905c7b9878e4dc36051afd2c3c9bb3f437ee9c228
-      - type: file
-        url: 
-      - type: file
-        path: build.sh
-
+        url: https://github.com/mrquantumoff/quadrant/releases/download/v25.1.0-preview.9/Quadrant_25.1.0-preview.9_amd64.deb
+        sha256: 3928168529a8ea6fb380f07f2cb870ddfb3abe797c121e1d920533c2b0b2980c
+      # - type: file
+      #   path: /home/dy/git/quadrant/src-tauri/target/release/bundle/deb/Quadrant_25.1.0-preview.9_amd64.deb
+    build-commands:
+      - ar -x *.deb
+      - tar -xf data.tar.gz
+      - install -Dm755 usr/bin/quadrant_next /app/bin/quadrant_next
+      - sed -i 's/Icon=quadrant_next/Icon=dev.mrquantumoff.mcmodpackmanager/' usr/share/applications/Quadrant.desktop
+      - sed -i 's/Exec=quadrant_next/Exec=quadrant_next --noupdater %u/' usr/share/applications/Quadrant.desktop
+      - install -Dm644 usr/share/applications/Quadrant.desktop /app/share/applications/dev.mrquantumoff.mcmodpackmanager.desktop
+      - install -Dm644 usr/share/icons/hicolor/128x128/apps/quadrant_next.png /app/share/icons/hicolor/128x128/apps/dev.mrquantumoff.mcmodpackmanager.png
+      - install -Dm644 usr/share/icons/hicolor/32x32/apps/quadrant_next.png /app/share/icons/hicolor/32x32/apps/dev.mrquantumoff.mcmodpackmanager.png
+      - install -Dm644 usr/share/icons/hicolor/256x256@2/apps/quadrant_next.png /app/share/icons/hicolor/256x256@2/apps/dev.mrquantumoff.mcmodpackmanager.png
+      - install -Dm644 dev.mrquantumoff.mcmodpackmanager.metainfo.xml /app/share/metainfo/dev.mrquantumoff.mcmodpackmanager.rosary.metainfo.xml
