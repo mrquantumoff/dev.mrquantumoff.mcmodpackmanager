@@ -25,8 +25,8 @@ modules:
     buildsystem: simple
     sources:
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/raw/v25.1.0-preview.9/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
-        sha256: 05c77669691f32f0ffbb5cbc44408ef47ff07efe02b849d28ec61d8745bfc9e1
+        url: https://github.com/mrquantumoff/quadrant/raw/v25.1.0-preview.10/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
+        sha256: 6cca717d79dd3e4a873923efad9eff465f2618161d6a880dc445c9a5a71cf36a
       # - type: file
       #   url: https://github.com/mrquantumoff/quadrant/raw/next/public/logo.svg
       #   sha256: c931975c41451c948805f9ae9401464870dfc6779f1160ad5c346cdb3fa870d7
@@ -34,10 +34,10 @@ modules:
       #   url: https://github.com/mrquantumoff/quadrant/raw/next/public/tray.png
       #   sha256: 552ddc5167d947d27084e1b53bb892dd7e4e6d4de7a8dc99172219a2c5080a02
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/releases/download/v25.1.0-preview.9/Quadrant_25.1.0-preview.9_amd64.deb
-        sha256: 3928168529a8ea6fb380f07f2cb870ddfb3abe797c121e1d920533c2b0b2980c
+        url: https://github.com/mrquantumoff/quadrant/releases/download/v25.1.0-preview.10/Quadrant_25.1.0-preview.10_amd64.deb
+        sha256: 6ca28c7fb17bc72c90a3f9c0336faa269fef9f7791cff456380de8830b025ed0
       # - type: file
-      #   path: /home/dy/git/quadrant/src-tauri/target/release/bundle/deb/Quadrant_25.1.0-preview.9_amd64.deb
+      #   path: /home/dy/git/quadrant/src-tauri/target/release/bundle/deb/Quadrant_25.1.0-preview.10_amd64.deb
     build-commands:
       - ar -x *.deb
       - tar -xf data.tar.gz
