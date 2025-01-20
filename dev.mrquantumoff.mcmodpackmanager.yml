@@ -16,34 +16,24 @@ finish-args:
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
+  - --own-name=org.dev_mrquantumoff_mcmodpackmanager.SingleInstance
 
 modules:
   - shared-modules/libappindicator/libappindicator-gtk3-12.10.json
-  # # - shared-modules/libdecor/libdecor.json
-  # - shared-modules/libsecret/libsecret.json
   - name: Quadrant
     buildsystem: simple
     sources:
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/raw/v25.1.0-preview.10/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
+        url: https://github.com/mrquantumoff/quadrant/raw/v25.1.0-preview.11/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
         sha256: 6cca717d79dd3e4a873923efad9eff465f2618161d6a880dc445c9a5a71cf36a
-      # - type: file
-      #   url: https://github.com/mrquantumoff/quadrant/raw/next/public/logo.svg
-      #   sha256: c931975c41451c948805f9ae9401464870dfc6779f1160ad5c346cdb3fa870d7
-      # - type: file
-      #   url: https://github.com/mrquantumoff/quadrant/raw/next/public/tray.png
-      #   sha256: 552ddc5167d947d27084e1b53bb892dd7e4e6d4de7a8dc99172219a2c5080a02
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/releases/download/v25.1.0-preview.10/Quadrant_25.1.0-preview.10_amd64.deb
-        sha256: 6ca28c7fb17bc72c90a3f9c0336faa269fef9f7791cff456380de8830b025ed0
-      # - type: file
-      #   path: /home/dy/git/quadrant/src-tauri/target/release/bundle/deb/Quadrant_25.1.0-preview.10_amd64.deb
+        url: https://github.com/mrquantumoff/quadrant/releases/download/v25.1.0-preview.11/Quadrant_25.1.0-preview.11_amd64.deb
+        sha256: 9ecd011f6713a3373dc7b8a657f6252f6a0ddf49b91c1499ad4e2ae515c8be62
     build-commands:
       - ar -x *.deb
       - tar -xf data.tar.gz
       - install -Dm755 usr/bin/quadrant_next /app/bin/quadrant_next
-      - sed -i 's/Icon=quadrant_next/Icon=dev.mrquantumoff.mcmodpackmanager/' usr/share/applications/Quadrant.desktop
-      - sed -i 's/Exec=quadrant_next/Exec=quadrant_next --noupdater %u/' usr/share/applications/Quadrant.desktop
+      - desktop-file-edit --set-key=Exec --set-value="quadrant_next --noupdater %u" --set-key=Icon --set-value=dev.mrquantumoff.mcmodpackmanager usr/share/applications/Quadrant.desktop
       - install -Dm644 usr/share/applications/Quadrant.desktop /app/share/applications/dev.mrquantumoff.mcmodpackmanager.desktop
       - install -Dm644 usr/share/icons/hicolor/128x128/apps/quadrant_next.png /app/share/icons/hicolor/128x128/apps/dev.mrquantumoff.mcmodpackmanager.png
       - install -Dm644 usr/share/icons/hicolor/32x32/apps/quadrant_next.png /app/share/icons/hicolor/32x32/apps/dev.mrquantumoff.mcmodpackmanager.png
