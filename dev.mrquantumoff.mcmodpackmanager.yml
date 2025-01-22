@@ -37,4 +37,4 @@ modules:
       - install -Dm644 usr/share/icons/hicolor/128x128/apps/quadrant_next.png /app/share/icons/hicolor/128x128/apps/dev.mrquantumoff.mcmodpackmanager.png
       - install -Dm644 usr/share/icons/hicolor/32x32/apps/quadrant_next.png /app/share/icons/hicolor/32x32/apps/dev.mrquantumoff.mcmodpackmanager.png
       - install -Dm644 usr/share/icons/hicolor/256x256@2/apps/quadrant_next.png /app/share/icons/hicolor/256x256@2/apps/dev.mrquantumoff.mcmodpackmanager.png
-      - install -Dm644 dev.mrquantumoff.mcmodpackmanager.metainfo.xml /app/share/metainfo/dev.mrquantumoff.mcmodpackmanager.rosary.metainfo.xml
+      - install -Dm644 dev.mrquantumoff.mcmodpackmanager.metainfo.xml /app/share/metainfo/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
