@@ -1,3 +1,7 @@
 build-dir
 .flatpak-builder
 test-repo
+export
+quadrant.flatpak
+
+tmp.*
