@@ -12,7 +12,6 @@ finish-args:
   - --share=network
   - --device=dri
   - --filesystem=host
-  - --filesystem=xdg-data
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
