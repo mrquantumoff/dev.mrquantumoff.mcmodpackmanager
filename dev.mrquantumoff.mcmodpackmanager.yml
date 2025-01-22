@@ -24,7 +24,7 @@ modules:
     sources:
       - type: file
         url: https://github.com/mrquantumoff/quadrant/raw/v25.2.0-stable/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
-        sha256: 833f25cdd49bbc48afeb97a3af1358e044ddf99a954e5d49c0c7b8a1f4624ef9
+        sha256: 3c22afdb49112152698478aec6da47691c0ecef948d451646568616b35317b4f
       - type: file
         url: https://github.com/mrquantumoff/quadrant/releases/download/v25.2.0-stable/Quadrant_25.2.0-stable_amd64.deb
         sha256: 8bfc8cbf3269261b8f6318cc6324f258fbe875ea551d85150a6b7b5838c7d6a8
