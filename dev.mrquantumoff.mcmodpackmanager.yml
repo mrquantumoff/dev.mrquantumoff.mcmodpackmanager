@@ -1,9 +1,9 @@
 # Flatpak Manifest
 app-id: dev.mrquantumoff.mcmodpackmanager
 runtime: org.gnome.Platform
-runtime-version: '47'
+runtime-version: '48'
 sdk: org.gnome.Sdk
-command: quadrant_next
+command: run_quadrant
 
 finish-args:
   - --share=ipc
@@ -28,12 +28,15 @@ modules:
       - type: file
         url: https://github.com/mrquantumoff/quadrant/releases/download/v25.5.0-stable/Quadrant_25.5.0-stable_amd64.deb
         sha256: b8f6ffea9ccb7c4ec48ee715ad805a03fa354fd6585e615b4617cf2f339894e2
+      - type: file
+        path: run_quadrant
 
     build-commands:
       - ar -x *.deb
       - tar -xf data.tar.gz
       - install -Dm755 usr/bin/quadrant_next /app/bin/quadrant_next
-      - desktop-file-edit --set-key=Exec --set-value="quadrant_next --noupdater %u" --set-key=Icon --set-value=dev.mrquantumoff.mcmodpackmanager usr/share/applications/Quadrant.desktop
+      - install -Dm755 run_quadrant /app/bin/run_quadrant
+      - desktop-file-edit --set-key=Exec --set-value="run_quadrant --noupdater %u" --set-key=Icon --set-value=dev.mrquantumoff.mcmodpackmanager usr/share/applications/Quadrant.desktop
       - install -Dm644 usr/share/applications/Quadrant.desktop /app/share/applications/dev.mrquantumoff.mcmodpackmanager.desktop
       - install -Dm644 usr/share/icons/hicolor/128x128/apps/quadrant_next.png /app/share/icons/hicolor/128x128/apps/dev.mrquantumoff.mcmodpackmanager.png
       - install -Dm644 usr/share/icons/hicolor/32x32/apps/quadrant_next.png /app/share/icons/hicolor/32x32/apps/dev.mrquantumoff.mcmodpackmanager.png
