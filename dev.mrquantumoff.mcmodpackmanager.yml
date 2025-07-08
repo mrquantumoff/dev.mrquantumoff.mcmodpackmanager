@@ -23,11 +23,11 @@ modules:
     buildsystem: simple
     sources:
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/raw/v25.6.0-stable/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
-        sha256: 8bfc09863bf849df684d6f8461d964afa04df046b062a84a3b01814dd5d855a4
+        url: https://github.com/mrquantumoff/quadrant/raw/v25.7.0-stable/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
+        sha256: 29ac2f8ec11b199584b0d37713a17c51fe48248b8f9f9f824c385a6ab0a67b7d
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/releases/download/v25.6.0-stable/Quadrant_25.6.0-stable_amd64.deb
-        sha256: f60e1a59799554bb253dd59f8c6265261c7946bb6c48004fbaed5f1ae47104b5
+        url: https://github.com/mrquantumoff/quadrant/releases/download/v25.7.0-stable/Quadrant_25.7.0-stable_amd64.deb
+        sha256: 2e161affd8b4395c3989580109f7abcbf384d9539dcd79822b00212dc237207a
       - type: file
         path: run_quadrant
 
