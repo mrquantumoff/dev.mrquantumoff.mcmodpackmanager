@@ -1,7 +1,7 @@
 # Flatpak Manifest
 app-id: dev.mrquantumoff.mcmodpackmanager
 runtime: org.gnome.Platform
-runtime-version: '48'
+runtime-version: "48"
 sdk: org.gnome.Sdk
 command: run_quadrant
 
@@ -23,11 +23,11 @@ modules:
     buildsystem: simple
     sources:
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/raw/v25.7.0-stable/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
-        sha256: 29ac2f8ec11b199584b0d37713a17c51fe48248b8f9f9f824c385a6ab0a67b7d
+        url: https://github.com/mrquantumoff/quadrant/raw/v25.8.0-stable/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
+        sha256: 4e8b57d055df6ad4bf6277e3d02b086d574c1156cfdfb5dd3ae1c7f0db79cd1c
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/releases/download/v25.7.0-stable/Quadrant_25.7.0-stable_amd64.deb
-        sha256: 2e161affd8b4395c3989580109f7abcbf384d9539dcd79822b00212dc237207a
+        url: https://github.com/mrquantumoff/quadrant/releases/download/v25.8.0-stable/Quadrant_25.8.0-stable_amd64.deb
+        sha256: 814b78fa8b2e4bd14d1c2078c92764037ff37945085fc966c80f4b4f325d8251
       - type: file
         path: run_quadrant
 
