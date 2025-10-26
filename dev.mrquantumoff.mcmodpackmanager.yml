@@ -1,7 +1,7 @@
 # Flatpak Manifest
 app-id: dev.mrquantumoff.mcmodpackmanager
 runtime: org.gnome.Platform
-runtime-version: "48"
+runtime-version: "49"
 sdk: org.gnome.Sdk
 command: run_quadrant
 
@@ -23,11 +23,16 @@ modules:
     buildsystem: simple
     sources:
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/raw/v25.9.0-stable/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
-        sha256: bf37b53a0d0bf5662c67ddcf9b6c91ddd464eee1d5049cf3a15b575a94f9088b
+        url: https://github.com/mrquantumoff/quadrant/raw/v25.10.0-stable/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
+        sha256: 51000f5e0e703fe3788beda81ab11975bf10ef3494c8d488b8c35cb0e8674f03
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/releases/download/v25.9.0-stable/Quadrant_25.9.0-stable_amd64.deb
-        sha256: 83e0c7a09c40a7ed0f057d8d06233e3d2ef88ed3ef0eb13f7e931573ce81b1d7
+        url: https://github.com/mrquantumoff/quadrant/releases/download/v25.10.0-stable/Quadrant_25.10.0-stable_amd64.deb
+        sha256: fe981bb09fbd7e779551c7d3a8b7719cdef60579edfa70a76ec6adbf38870140
+        only-arches: [x86_64]
+      - type: file
+        url: https://github.com/mrquantumoff/quadrant/releases/download/v25.10.0-stable/Quadrant_25.10.0-stable_arm64.deb
+        sha256: aa5a04b8dcf951cdb02adfe59a29eeafc9833b6e817dadba2744b285aa8855b8
+        only-arches: [aarch64]
       - type: file
         path: run_quadrant
 
