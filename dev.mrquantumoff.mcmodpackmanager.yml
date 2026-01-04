@@ -26,7 +26,7 @@ modules:
         sha256: 7b8951a6421a5de2de49d824b5bf367dec0cace7c9e9d05c3d525d863d6f4504
       - type: file
         url: https://github.com/mrquantumoff/quadrant/releases/download/v26.1.0-stable/Quadrant_26.1.0-stable_amd64.deb
-        sha256: 370ea21577b76bdeef8461b8c2f7bd3891aabc8b443cea6158ea7e5161c4b332
+        sha256: 1b642a33e36064fdb658b1bc834ed4888e841fea0676305105110f7a9c805776
         only-arches: [x86_64]
       - type: file
         url: https://github.com/mrquantumoff/quadrant/releases/download/v26.1.0-stable/Quadrant_26.1.0-stable_arm64.deb
