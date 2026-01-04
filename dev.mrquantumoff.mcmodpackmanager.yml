@@ -15,7 +15,6 @@ finish-args:
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
-  - --own-name=org.dev_mrquantumoff_mcmodpackmanager.SingleInstance
 
 modules:
   - shared-modules/libappindicator/libappindicator-gtk3-12.10.json
@@ -23,15 +22,15 @@ modules:
     buildsystem: simple
     sources:
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/raw/v25.12.0-stable/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
-        sha256: 83cd80e7598c0599c7e1f0a3ac5afa54fb5a2aea056a313f63cfad1e24a9a485
+        url: https://github.com/mrquantumoff/quadrant/raw/v26.1.0-stable/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
+        sha256: 7b8951a6421a5de2de49d824b5bf367dec0cace7c9e9d05c3d525d863d6f4504
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/releases/download/v25.12.0-stable/Quadrant_25.12.0-stable_amd64.deb
-        sha256: 011dd61d1fdd02e693e576b45e1881d7deb9618382ef9fd0348f025720e41d1f
+        url: https://github.com/mrquantumoff/quadrant/releases/download/v26.1.0-stable/Quadrant_26.1.0-stable_amd64.deb
+        sha256: 370ea21577b76bdeef8461b8c2f7bd3891aabc8b443cea6158ea7e5161c4b332
         only-arches: [x86_64]
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/releases/download/v25.12.0-stable/Quadrant_25.12.0-stable_arm64.deb
-        sha256: 68f4d177067111c03cfb00772346373baca1b50ebc840d801a9e41200bcaa0ac
+        url: https://github.com/mrquantumoff/quadrant/releases/download/v26.1.0-stable/Quadrant_26.1.0-stable_arm64.deb
+        sha256: c2acb784bf7842f9bdc8603184e6de88f4d150e16a5c15bd5dd9addeb9e9ac45
         only-arches: [aarch64]
       - type: file
         path: run_quadrant
