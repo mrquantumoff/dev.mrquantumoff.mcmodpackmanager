@@ -31,7 +31,7 @@ modules:
     sources:
       - type: file
         url: https://github.com/quadrantmc/quadrant/raw/v26.6.0-stable/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
-        sha256: 873e00a4ddaeddfa7b2a583d0b3f333e9cc21dedce5fe39ac861dee206863f4f
+        sha256: 1803f686b9420e63aecb379d476a995259e1a86262f469a7d7884441df01ec4c
       - type: file
         url: https://github.com/quadrantmc/quadrant/releases/download/v26.6.0-stable/Quadrant-26.6.0-stable-linux-x86_64-electron.AppImage
         sha256: c20abf34a02f32493a42b7857b856404bb4b27e126b0b39488135c1091c407bb
