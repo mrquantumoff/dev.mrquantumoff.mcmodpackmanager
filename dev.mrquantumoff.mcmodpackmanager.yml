@@ -30,15 +30,15 @@ modules:
     buildsystem: simple
     sources:
       - type: file
-        url: https://github.com/quadrantmc/quadrant/raw/v26.6.0-stable/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
-        sha256: 1803f686b9420e63aecb379d476a995259e1a86262f469a7d7884441df01ec4c
+        url: https://github.com/quadrantmc/quadrant/raw/v26.6.1-stable/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
+        sha256: cc235ece24138554a664fc4bba68253012e3e4f9c68dc929f5a1c62864c22212
       - type: file
-        url: https://github.com/quadrantmc/quadrant/releases/download/v26.6.0-stable/Quadrant-26.6.0-stable-linux-x86_64-electron.AppImage
-        sha256: c20abf34a02f32493a42b7857b856404bb4b27e126b0b39488135c1091c407bb
+        url: https://github.com/quadrantmc/quadrant/releases/download/v26.6.1-stable/Quadrant-26.6.1-stable-linux-x86_64-electron.AppImage
+        sha256: fd790c022ca9f363ec747f8de5388c3c827167830e64064b7f2ea4669a10677a
         only-arches: [x86_64]
       - type: file
-        url: https://github.com/quadrantmc/quadrant/releases/download/v26.6.0-stable/Quadrant-26.6.0-stable-linux-arm64-electron.AppImage
-        sha256: 5de9fd91105e25618b716fe5e7b1c17804f6b8bbb0ea6ed9a562d68cd51f73dd
+        url: https://github.com/quadrantmc/quadrant/releases/download/v26.6.1-stable/Quadrant-26.6.1-stable-linux-arm64-electron.AppImage
+        sha256: b0ea2529ae5b5ce268acf3c0bd884edd2dead62c9ccd0072ea570a6042408b9c
         only-arches: [aarch64]
 
     build-commands:
