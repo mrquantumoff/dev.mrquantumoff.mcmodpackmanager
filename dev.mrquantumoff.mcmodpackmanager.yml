@@ -22,14 +22,14 @@ modules:
     buildsystem: simple
     sources:
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/raw/v26.6.2-stable/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
+        url: https://github.com/quadrantmc/quadrant/raw/v26.6.2-stable/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
         sha256: 67ef8a584380fb82ea9c628b2cf133bb5f6c4798260ff78d38565704a3753d57
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/releases/download/v26.6.2-stable/Quadrant_26.6.2-stable_amd64.deb
+        url: https://github.com/quadrantmc/quadrant/releases/download/v26.6.2-stable/Quadrant_26.6.2-stable_amd64.deb
         sha256: 3eb6f417deabff96594351734a313f9c58a70e567c866b9dbee23bc4447216b8
         only-arches: [x86_64]
       - type: file
-        url: https://github.com/mrquantumoff/quadrant/releases/download/v26.6.2-stable/Quadrant_26.6.2-stable_arm64.deb
+        url: https://github.com/quadrantmc/quadrant/releases/download/v26.6.2-stable/Quadrant_26.6.2-stable_arm64.deb
         sha256: 16e367f0182f265e14b5349696d7ec1dead741f462546967940a521edc350c42
         only-arches: [aarch64]
       - type: file
