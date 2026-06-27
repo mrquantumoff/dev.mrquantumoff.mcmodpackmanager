@@ -1,14 +1,9 @@
-# @format
-
-# Example Flatpak Manifest
-# This repacks the published Tauri Debian package into a Flatpak-friendly
-# layout. Tauri uses WebKitGTK on Linux, so the Flatpak must use the GNOME
-# runtime instead of the lower-level freedesktop runtime.
+# Flatpak Manifest
 app-id: dev.mrquantumoff.mcmodpackmanager
 runtime: org.gnome.Platform
 runtime-version: "50"
 sdk: org.gnome.Sdk
-command: quadrant-next
+command: run_quadrant
 
 finish-args:
   - --share=ipc
@@ -17,7 +12,6 @@ finish-args:
   - --share=network
   - --device=dri
   - --filesystem=home
-  - --env=XCURSOR_PATH=/run/host/user-share/icons:/run/host/share/icons
   - --talk-name=org.freedesktop.secrets
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
@@ -28,53 +22,27 @@ modules:
     buildsystem: simple
     sources:
       - type: file
-        url: https://github.com/QuadrantMC/quadrant/raw/v26.6.2-stable/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
+        url: https://github.com/mrquantumoff/quadrant/raw/v26.6.2-stable/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
         sha256: 67ef8a584380fb82ea9c628b2cf133bb5f6c4798260ff78d38565704a3753d57
-      # The release workflow replaces these placeholder hashes when Tauri
-      # Debian packages are available for a stable tag.
       - type: file
-        url: https://github.com/QuadrantMC/quadrant/releases/download/v26.6.2-stable/Quadrant_26.6.2-stable_amd64.deb
+        url: https://github.com/mrquantumoff/quadrant/releases/download/v26.6.2-stable/Quadrant_26.6.2-stable_amd64.deb
         sha256: 3eb6f417deabff96594351734a313f9c58a70e567c866b9dbee23bc4447216b8
         only-arches: [x86_64]
       - type: file
-        url: https://github.com/QuadrantMC/quadrant/releases/download/v26.6.2-stable/Quadrant_26.6.2-stable_arm64.deb
+        url: https://github.com/mrquantumoff/quadrant/releases/download/v26.6.2-stable/Quadrant_26.6.2-stable_arm64.deb
         sha256: 16e367f0182f265e14b5349696d7ec1dead741f462546967940a521edc350c42
         only-arches: [aarch64]
+      - type: file
+        path: run_quadrant
 
     build-commands:
-      - |
-        set -eu
-        deb="$(echo Quadrant_*.deb)"
-        bsdtar -xf "$deb"
-        data_archive="$(echo data.tar.*)"
-        bsdtar -xf "$data_archive"
-      - |
-        set -eu
-        install -dm755 /app
-        cp -a usr/. /app/
-      - |
-        set -eu
-        desktop_file="$(find /app/share/applications -name '*.desktop' | head -n 1)"
-        if [ -z "$desktop_file" ]; then
-          echo "Could not find a desktop file in the extracted Debian package." >&2
-          exit 1
-        fi
-
-        desktop-file-edit \
-          --set-key=Exec --set-value="quadrant-next %u" \
-          --set-key=Icon --set-value=dev.mrquantumoff.mcmodpackmanager \
-          "$desktop_file"
-        install -Dm644 "$desktop_file" /app/share/applications/dev.mrquantumoff.mcmodpackmanager.desktop
-      - |
-        set -eu
-        icons="$(find /app/share/icons/hicolor \( -path '*/apps/*.png' -o -path '*/apps/*.svg' \) | sort)"
-        if [ -z "$icons" ]; then
-          echo "Could not find app icons in the extracted Debian package." >&2
-          exit 1
-        fi
-        printf '%s\n' "$icons" | while IFS= read -r icon; do
-          size="$(basename "$(dirname "$(dirname "$icon")")")"
-          ext="${icon##*.}"
-          install -Dm644 "$icon" "/app/share/icons/hicolor/${size}/apps/dev.mrquantumoff.mcmodpackmanager.${ext}"
-        done
+      - ar -x *.deb
+      - tar -xf data.tar.gz
+      - install -Dm755 usr/bin/quadrant_next /app/bin/quadrant_next
+      - install -Dm755 run_quadrant /app/bin/run_quadrant
+      - desktop-file-edit --set-key=Exec --set-value="run_quadrant --noupdater %u" --set-key=Icon --set-value=dev.mrquantumoff.mcmodpackmanager usr/share/applications/Quadrant.desktop
+      - install -Dm644 usr/share/applications/Quadrant.desktop /app/share/applications/dev.mrquantumoff.mcmodpackmanager.desktop
+      - install -Dm644 usr/share/icons/hicolor/128x128/apps/quadrant_next.png /app/share/icons/hicolor/128x128/apps/dev.mrquantumoff.mcmodpackmanager.png
+      - install -Dm644 usr/share/icons/hicolor/32x32/apps/quadrant_next.png /app/share/icons/hicolor/32x32/apps/dev.mrquantumoff.mcmodpackmanager.png
+      - install -Dm644 usr/share/icons/hicolor/256x256@2/apps/quadrant_next.png /app/share/icons/hicolor/256x256@2/apps/dev.mrquantumoff.mcmodpackmanager.png
       - install -Dm644 dev.mrquantumoff.mcmodpackmanager.metainfo.xml /app/share/metainfo/dev.mrquantumoff.mcmodpackmanager.metainfo.xml
