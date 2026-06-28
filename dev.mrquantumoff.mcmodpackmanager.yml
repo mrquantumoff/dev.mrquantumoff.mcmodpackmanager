@@ -4,7 +4,7 @@ runtime: org.gnome.Platform
 runtime-version: "50"
 sdk: org.gnome.Sdk
 command: run_quadrant
-rename-icon: logo
+rename-icon: quadrant_next
 rename-desktop-file: Quadrant.desktop
 
 finish-args:
@@ -48,4 +48,4 @@ modules:
       - desktop-file-edit --set-key=Exec --set-value="run_quadrant --noupdater %u" usr/share/applications/Quadrant.desktop
       - install -Dm644 usr/share/applications/Quadrant.desktop -t /app/share/applications/
       - install -Dm644 ${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo/
-      - install -Dm644 logo.svg -t /app/share/icons/scalable/apps/
+      - install -Dm644 logo.svg -t /app/share/icons/scalable/apps/quadrant_next.svg
