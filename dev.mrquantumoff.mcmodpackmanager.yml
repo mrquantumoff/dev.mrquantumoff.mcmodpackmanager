@@ -36,6 +36,9 @@ modules:
         only-arches: [aarch64]
       - type: file
         path: run_quadrant
+      - type: file
+        url: https://github.com/QuadrantMC/quadrant/raw/refs/heads/next/public/logo.svg
+        sha256: ed2c9b6731b7324355944347d5bc567f1ff9c4a9e2522ed02c4aa6c1181ecba7
 
     build-commands:
       - ar -x *.deb
@@ -46,3 +49,4 @@ modules:
       - install -Dm644 usr/share/applications/Quadrant.desktop -t /app/share/applications/
       - install -Dm644 usr/share/icons/hicolor/256x256@2/apps/quadrant_next.png -t /app/share/icons/hicolor/256x256/apps/
       - install -Dm644 ${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo/
+      - install -Dm644 logo.svg -t /app/share/icons/scalable/apps/quadrant_next.svg
